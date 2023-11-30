@@ -10,6 +10,7 @@ const routes: Routes = [
   //En appelant l'url /home on chargera le HomeComponent
   { path: 'home', component: HomeComponent },
   { path: 'about', component: AboutComponent },
+  { path: 'demo', loadChildren: () => import('./demo/demo.module').then(m => m.DemoModule) },
   { path: '**', component: NotFoundComponent }
 ];
 
