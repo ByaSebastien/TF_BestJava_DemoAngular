@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 
 import { DemoRoutingModule } from './demo-routing.module';
 import { Demo01BindingsComponent } from './demo01-bindings/demo01-bindings.component';
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -11,7 +12,8 @@ import { Demo01BindingsComponent } from './demo01-bindings/demo01-bindings.compo
   ],
   imports: [
     CommonModule,
-    DemoRoutingModule
+    DemoRoutingModule,
+    FormsModule
   ]
 })
 export class DemoModule { }

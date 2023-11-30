@@ -7,4 +7,11 @@ import { Component } from '@angular/core';
 })
 export class Demo01BindingsComponent {
 
+  myString: string = 'Hello World!!!';
+  name: string = '';
+
+
+  sayThanks(): void {
+    alert('Thanks my friend!')
+  }
 }

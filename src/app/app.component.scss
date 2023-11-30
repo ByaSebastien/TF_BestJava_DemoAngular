@@ -1,0 +1,32 @@
+;
+
+:host {
+    height: 100%;
+    width: 100%;
+
+    header {
+        background-color: darkcyan;
+        color: white;
+        text-align: center;
+        border-bottom: 5px solid black;
+        height: 15%;
+    }
+
+    .content {
+        display: flex;
+        min-height: 85%;
+
+        nav {
+            width: 30%;
+            background-color: aquamarine;
+            min-height: 100%;
+            border-right: 5px solid black;
+        }
+
+        main {
+            text-align: center;
+            width: 70%;
+            min-height: 100%;
+        }
+    }
+}

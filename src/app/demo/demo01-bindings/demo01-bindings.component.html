@@ -1,1 +1,14 @@
-<p>demo01-bindings works!</p>
+<h2>Demo Bindings</h2>
+<div class="chapter">
+    <h3>Property Binding</h3>
+    <h4>One way</h4>
+    <p>{{myString}}</p>
+    <hr>
+    <h4>Two ways</h4>
+    <input type="text" [(ngModel)]="name">
+    <p>Hello {{name}}!!!</p>
+</div>
+<div class="chapter">
+    <h3>Event Binding</h3>
+    <button (click)="sayThanks()">Click me!</button>
+</div>
