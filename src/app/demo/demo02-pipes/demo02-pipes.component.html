@@ -1,0 +1,25 @@
+<h2>Demo pipes</h2>
+<div class="chapter">
+    <h3>Native pipes</h3>
+    <p>Contenu de myString : {{myString}}</p>
+    <hr>
+    <p>Lowercase : {{myString | lowercase}}</p>
+    <p>Uppercase : {{myString | uppercase}}</p>
+    <p>Titlecase : {{myString | titlecase}}</p>
+    <hr>
+    <p>Contenus de myDate {{myDate}}</p>
+    <hr>
+    <p>Date : {{myDate |date : 'dd-MM-yy'}}</p>
+    <hr>
+    <p>Contenus de myNumber {{myNumber}}</p>
+    <hr>
+    <p>Currency : {{myNumber | currency : 'EUR'}}</p>
+</div>
+<div class="chapter">
+    <h3>Custom pipe</h3>
+    <p>BaseTemperature : {{myNumber}}</p>
+    <hr>
+    <p>ToFahrenheit : {{myNumber | toFahrenheit}}</p>
+    <p>ConvertTemp -> C° : {{myNumber | convertTemp : 'C'}}</p>
+    <p>ConvertTemp -> F° : {{myNumber | convertTemp : 'F'}}</p>
+</div>

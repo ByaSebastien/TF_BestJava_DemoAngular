@@ -9,9 +9,13 @@ export class Demo01BindingsComponent {
 
   myString: string = 'Hello World!!!';
   name: string = '';
+  isActive: boolean = true;
 
 
   sayThanks(): void {
     alert('Thanks my friend!')
+  }
+  toggleIsActive() {
+    this.isActive = !this.isActive;
   }
 }

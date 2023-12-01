@@ -8,7 +8,7 @@ const routes: Routes = [
     path: '', component: ExoComponent, children: [
       { path: 'exo01', component: Exo01TimerComponent }
     ]
-  }
+  },
 ];
 
 @NgModule({
