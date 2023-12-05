@@ -1,0 +1,6 @@
+<h2>Demo services</h2>
+<div class="chapter">
+    <h3>Connect</h3>
+    <button *ngIf="!isConnected" (click)="login()">Se connecter</button>
+    <button *ngIf="isConnected" (click)="logout()">Se déconnecter</button>
+</div>

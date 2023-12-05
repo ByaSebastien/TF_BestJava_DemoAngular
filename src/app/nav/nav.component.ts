@@ -19,6 +19,7 @@ export class NavComponent {
         { title: 'Structural directives', url: '/demo/demo03' },
         { title: 'Component directives', url: '/demo/demo04' },
         { title: 'Input/Output', url: '/demo/demo05' },
+        { title: 'Services', url: '/demo/demo06' },
       ],
       isVisible: false
     },
