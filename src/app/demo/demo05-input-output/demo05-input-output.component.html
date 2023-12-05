@@ -1,0 +1,8 @@
+<h2>Demo Input/Output</h2>
+<div class="chapter">
+    <h3>Parent</h3>
+    <input type="text" [(ngModel)]="name" placeholder="Rentrez votre nom">
+    <p>Mon enfant a envie de {{envieEnfant}}</p>
+    <hr>
+    <app-demo05-enfant (envieEvent)="setEnvieEnfant($event)" [parentName]="name"></app-demo05-enfant>
+</div>
