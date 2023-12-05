@@ -1,0 +1,43 @@
+<h2>Structural Directives</h2>
+<div class="chapter">
+    <h3>ngIf</h3>
+    <h4 *ngIf="isDayTime;else isNightTime">Jour</h4>
+    <ng-template #isNightTime>
+        <h4>Nuit</h4>
+    </ng-template>
+    <!-- <h4 *ngIf="!isDayTime">Nuit</h4> -->
+    <button (click)="toggleIsDayTime()">Jacquouille!!!</button>
+</div>
+<div class="chapter">
+    <h3>ngFor</h3>
+    <ul>
+        <li *ngFor="let book of books">{{book.title}} : {{book.author}}</li>
+    </ul>
+</div>
+<div class="chapter">
+    <h3>ngSwitch</h3>
+    <div [ngSwitch]="day">
+        <div *ngSwitchCase="1">
+            <p>Lundi des patates!</p>
+        </div>
+        <div *ngSwitchCase="2">
+            <p>Mardi des patates!</p>
+        </div>
+        <div *ngSwitchCase="3">
+            <p>Mercredi des patates!</p>
+        </div>
+        <div *ngSwitchCase="4">
+            <p>Jeudi des patates!</p>
+        </div>
+        <div *ngSwitchCase="5">
+            <p>Vendredi des patates!</p>
+        </div>
+        <div *ngSwitchCase="6">
+            <p>Samedi des patates!</p>
+        </div>
+        <div *ngSwitchCase="7">
+            <p>Et le dimanche, jours du seigneur, a quelle bonheur, des patates au beurre</p>
+        </div>
+        <div *ngSwitchDefault>Error</div>
+    </div>
+</div>

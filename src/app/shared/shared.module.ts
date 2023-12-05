@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { ToFahrenheitPipe } from './pipes/to-fahrenheit.pipe';
 import { FormsModule } from '@angular/forms';
 import { ConvertTempPipe } from './pipes/convert-temp.pipe';
+import { ConvertTimePipe } from './pipes/convert-time.pipe';
 
 
 
@@ -10,7 +11,8 @@ import { ConvertTempPipe } from './pipes/convert-temp.pipe';
   //Tout les elements declarés dans mon SharedModule
   declarations: [
     ToFahrenheitPipe,
-    ConvertTempPipe
+    ConvertTempPipe,
+    ConvertTimePipe
   ],
   //Tout les elements importés depuis l'exterieur dans mon SharedModule
   imports: [
@@ -21,7 +23,8 @@ import { ConvertTempPipe } from './pipes/convert-temp.pipe';
   exports: [
     FormsModule,
     ToFahrenheitPipe,
-    ConvertTempPipe
+    ConvertTempPipe,
+    ConvertTimePipe
   ]
 })
 export class SharedModule { }

@@ -7,4 +7,26 @@ import { Component } from '@angular/core';
 })
 export class Exo01TimerComponent {
 
+  totalSeconds: number = 0;
+  timer: any = null;
+  isActive: boolean = false;
+
+  start(): void {
+    if (this.isActive) {
+      return;
+    }
+    this.timer = setInterval(() => {
+      this.totalSeconds += 1;
+    }, 1000)
+    this.isActive = true;
+  }
+  stop(): void {
+    clearInterval(this.timer);
+    console.log(this.timer);
+    this.isActive = false;
+  }
+  reset(): void {
+    this.stop();
+    this.totalSeconds = 0;
+  }
 }

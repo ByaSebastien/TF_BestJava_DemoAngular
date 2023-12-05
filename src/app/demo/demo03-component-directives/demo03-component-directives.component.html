@@ -1,0 +1,15 @@
+<h2>Demo component directives</h2>
+<div class="chapter">
+    <h3>NgStyle</h3>
+    <!-- NgStyle permet de rajouter du style inline -->
+    <p [ngStyle]="currentStyle">Je suis vraiment content que Khun soit parmis nous!</p>
+    <button (click)="toggleIsItalic()">Italic</button>
+    <button (click)="toggleIsBold()">Bold</button>
+    <button (click)="toggleIsBig()">Big</button>
+</div>
+<div class="chapter">
+    <h3>NgClass</h3>
+    <!-- NgClass permet de rajouter une class a la balise (selecteur css) -->
+    <h4 [ngClass]="currentClass">🎄 Joyeux Noël 🎄</h4>
+    <p [ngClass]="{'red':false}">Coucou</p>
+</div>
