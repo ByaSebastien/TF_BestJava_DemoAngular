@@ -1,0 +1,9 @@
+<h3>Panier</h3>
+<ul *ngIf="productList">
+    <li *ngFor="let product of productList;let i = index">
+        <p>{{product.name}} {{product.quantity}}</p>
+        <button (click)="minusOneEvent.next(i)">➖</button>
+        <button (click)="plusOneEvent.next(i)">➕</button>
+        <button (click)="deleteEvent.next(i)">Supprimer</button>
+    </li>
+</ul>

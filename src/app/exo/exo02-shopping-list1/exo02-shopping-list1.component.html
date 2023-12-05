@@ -1,0 +1,10 @@
+<h2>Shopping list 1</h2>
+<div class="chapter">
+    <h3>Parent</h3>
+    <input type="text" [(ngModel)]="productName" placeholder="Product name">
+    <button (click)="addProduct()">Ajouter</button>
+    <hr>
+    <app-exo02-enfant [productList]="products" (minusOneEvent)="minusOne($event)" (plusOneEvent)="plusOne($event)"
+        (deleteEvent)="delete($event)">
+    </app-exo02-enfant>
+</div>

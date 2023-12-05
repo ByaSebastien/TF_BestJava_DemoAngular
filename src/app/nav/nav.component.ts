@@ -24,7 +24,8 @@ export class NavComponent {
     },
     {
       title: 'Exos', url: '/exo', children: [
-        { title: 'Timer', url: '/exo/exo01' }
+        { title: 'Timer', url: '/exo/exo01' },
+        { title: 'Shopping list 1', url: '/exo/exo02' },
       ],
       isVisible: false
     }
