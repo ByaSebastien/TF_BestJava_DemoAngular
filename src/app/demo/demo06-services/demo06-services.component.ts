@@ -20,8 +20,10 @@ export class Demo06ServicesComponent implements OnInit {
 
   login() {
     this._fakeAuthService.login();
+    this.isConnected = this._fakeAuthService.isConnected;
   }
   logout() {
     this._fakeAuthService.logout();
+    this.isConnected = this._fakeAuthService.isConnected;
   }
 }

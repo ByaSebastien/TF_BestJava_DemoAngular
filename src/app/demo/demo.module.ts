@@ -10,6 +10,7 @@ import { Demo04StructuralDirectivesComponent } from './demo04-structural-directi
 import { Demo05InputOutputComponent } from './demo05-input-output/demo05-input-output.component';
 import { Demo05EnfantComponent } from './demo05-input-output/demo05-enfant/demo05-enfant.component';
 import { Demo06ServicesComponent } from './demo06-services/demo06-services.component';
+import { Demo07FormulairesComponent } from './demo07-formulaires/demo07-formulaires.component';
 
 
 @NgModule({
@@ -21,6 +22,7 @@ import { Demo06ServicesComponent } from './demo06-services/demo06-services.compo
     Demo05InputOutputComponent,
     Demo05EnfantComponent,
     Demo06ServicesComponent,
+    Demo07FormulairesComponent,
   ],
   imports: [
     CommonModule,

@@ -20,6 +20,7 @@ export class NavComponent {
         { title: 'Component directives', url: '/demo/demo04' },
         { title: 'Input/Output', url: '/demo/demo05' },
         { title: 'Services', url: '/demo/demo06' },
+        { title: 'Formulaires', url: '/demo/demo07' },
       ],
       isVisible: false
     },
@@ -27,6 +28,7 @@ export class NavComponent {
       title: 'Exos', url: '/exo', children: [
         { title: 'Timer', url: '/exo/exo01' },
         { title: 'Shopping list 1', url: '/exo/exo02' },
+        { title: 'Shopping list 2', url: '/exo/exo03' },
       ],
       isVisible: false
     }

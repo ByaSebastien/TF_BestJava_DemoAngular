@@ -1,0 +1,21 @@
+<h2>Demo formulaires</h2>
+<div class="chapter">
+    <h3>Recipe form</h3>
+    <form [formGroup]="fg" (ngSubmit)="onSubmit()">
+        <input type="text" formControlName="name" placeholder="name">
+        <p *ngIf="fg.get('name')?.touched && fg.get('name')?.hasError('required')" class="error">Le nom est requis</p>
+        <p *ngIf="fg.get('name')?.dirty && fg.get('name')?.hasError('maxlength')" class="error">Le nom doit faire
+            maximum 10 char</p>
+        <input type="text" formControlName="origin" placeholder="origin">
+        <input type="number" formControlName="note" placeholder="note">
+        <div formArrayName="ingredients">
+            <div *ngFor="let ingredient of ingredients.controls;let i = index">
+                <input type="text" [formControlName]="i">
+                <button type="button" (click)="removeIngredient(i)">✖️</button>
+            </div>
+        </div>
+        <p *ngIf="fg.hasError('ingredientsLength')" class="error">Min 2 ingredients</p>
+        <button type="button" (click)="addIngredient()">Add ingredient</button>
+        <button type="submit">Submit</button>
+    </form>
+</div>

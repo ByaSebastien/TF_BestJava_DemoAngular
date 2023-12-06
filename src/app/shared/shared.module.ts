@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ToFahrenheitPipe } from './pipes/to-fahrenheit.pipe';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ConvertTempPipe } from './pipes/convert-temp.pipe';
 import { ConvertTimePipe } from './pipes/convert-time.pipe';
 
@@ -17,11 +17,13 @@ import { ConvertTimePipe } from './pipes/convert-time.pipe';
   //Tout les elements importés depuis l'exterieur dans mon SharedModule
   imports: [
     CommonModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
   ],
   //Tout les elements que je rend accessible depuis l'exterieur aux modules qui importeront SharedModule
   exports: [
     FormsModule,
+    ReactiveFormsModule,
     ToFahrenheitPipe,
     ConvertTempPipe,
     ConvertTimePipe
